@@ -26,13 +26,4 @@ public class IndexControllerTest {
         assertThat(body).contains("스프링 부트로 시작하는 웹 서비스");
     }
 
-    @Test
-    public void 글_작성() {
-        //when
-        String body = this.restTemplate.getForObject("/posts/save", String.class);
-
-        //then
-        assertThat(body).contains("제목");
-    }
-
 }
